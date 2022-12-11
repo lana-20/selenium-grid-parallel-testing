@@ -83,6 +83,7 @@ If running in Jenkins, Reports are generated in Jenkins:
 - Extent
 
 Eg, in Jenkins go to Build # 101, report it, and locate the Allure report in that particular Build.
+<img src="https://user-images.githubusercontent.com/70295997/206930532-93831b7e-66e9-4a4e-968d-fc2cfb61981d.png" width=800>
 
 
 
