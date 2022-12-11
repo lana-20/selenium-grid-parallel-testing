@@ -41,3 +41,15 @@ The cloud is like a VM, eg, an EC2 instance on AWS.
 
 I move the entire Hub machine to a different server. I request one new machine from my management. I need a physical machine next to my desk or in the server room.
 And the server can be 16 GB RAM, i5 processor, or any other configs I want to have.
+
+<img src="https://user-images.githubusercontent.com/70295997/206884114-187cc50c-fe07-470d-b4c2-c3defc6e51af.png">
+
+This particular Hub has its own IP Address and Port Number. I have to configure the same IP : Port in my code. The code is available in my script on the Local Machine in the IDE (PyCharm, Eclipse, IntelliJ, etc). In the script I pass the the IP address and Port # of that Server that I've occupied. Then I pass the script to the Hub and the respective process happens with the Nodes (connected to the Hub).
+
+All these Nodes can also be moved to a different machine. From my management I request 5 machines for my 4 Nodes and 1 Hub. Machine M1 is the Hub. I run it on 192.168.1.1:4444. As soon as I run the Hub Server, I can see the Grid Console/Dashboard. The Node Console is black, when no nodes are working.
+
+<img src="https://user-images.githubusercontent.com/70295997/206884436-a981daf1-4c6c-41ca-a084-d643f83b2d18.png" width=400>
+
+
+
+
