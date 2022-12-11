@@ -8,6 +8,8 @@ There are 4 components in the Selenium suite:
 
 __Selenium Grid__ is the 4th component of Selenium.
 
+<img src="https://user-images.githubusercontent.com/70295997/206883687-bb9eb1af-5612-41de-8ddc-bd28d743e890.png">
+
  *  __DesiredCapabilites__ are used to set the type of browser and OS that I automate.
  *  __RemoteWebDriver__ is used to set the node/machine which my test runs against.
  
