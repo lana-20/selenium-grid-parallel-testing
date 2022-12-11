@@ -67,6 +67,9 @@ The entire infrastructure must be on the same Network. On my Local Host, the Hub
 
 For Safari there's no container, only for Chrome and Firefox. Apple does not provide any container for Safari Driver.
 
+<img src="https://user-images.githubusercontent.com/70295997/206892243-21f32232-fc88-455a-8f57-1fa641c1553d.png" width=400>
+
+
 Can host the Grid on Local, any other server, AWS cloud, or remote test labs. Just need the Hub Server IP address to set up on any machine. Configure it (the IP) in my Local (DesiredCapabilities), push the code to _master_ and trigger it.
 
 Do not maintain the Master Branch inside the Hub. But how to generate reports? Reports are generated in my Local, because of the build path (project folder path).
