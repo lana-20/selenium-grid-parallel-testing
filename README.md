@@ -8,7 +8,7 @@ There are 4 components in the Selenium suite:
 
 __Selenium Grid__ is the 4th component of Selenium.
 
-<img src="https://user-images.githubusercontent.com/70295997/206883687-bb9eb1af-5612-41de-8ddc-bd28d743e890.png">
+<img src="https://user-images.githubusercontent.com/70295997/206888643-964d0057-bec1-452d-b430-c5adaabf35e2.png">
 
  *  __DesiredCapabilites__ are used to set the type of browser and OS that I automate.
  *  __RemoteWebDriver__ is used to set the node/machine which my test runs against.
@@ -46,9 +46,15 @@ And the server can be 16 GB RAM, i5 processor, or any other configs I want to ha
 
 This particular Hub has its own IP Address and Port Number. I have to configure the same IP : Port in my code. The code is available in my script on the Local Machine in the IDE (PyCharm, Eclipse, IntelliJ, etc). In the script I pass the the IP address and Port # of that Server that I've occupied. Then I pass the script to the Hub and the respective process happens with the Nodes (connected to the Hub).
 
-All these Nodes can also be moved to a different machine. From my management I request 5 machines for my 4 Nodes and 1 Hub. Machine M1 is the Hub. I run it on 192.168.1.1:4444. As soon as I run the Hub Server, I can see the Grid Console/Dashboard. The Node Console is black, when no nodes are working.
+All these Nodes can also be moved to a different machine. From my management I request 5 machines for my 4 Nodes and 1 Hub. Machine M1 is the Hub. I run it on 192.168.1.1:4444. As soon as I run the Hub Server, I can see the Grid Console/Dashboard. The Node Console is black, when no nodes are working. Register Nodes with the Hub to establish connection.
 
-<img src="https://user-images.githubusercontent.com/70295997/206884436-a981daf1-4c6c-41ca-a084-d643f83b2d18.png" width=400>
+<img src="https://user-images.githubusercontent.com/70295997/206889046-96abbadb-e6d6-46ef-850d-301f25e8e5de.png" width=400>
+
+I can move this entire configuration to a different machine that is also a Local Machine. On the Local Host, my code contains Desired Capabilities, Host IP address, browsers and platforms I want to run. Based on that script, I send a request to the Hub to get executed on the Nodes.
+
+The entire infrastructure must be on the same Network. On my Local Host, the Hub IP must be white-listed, which is attainable when on the same network. Test case scripts run on respective node machines.
+
+<img src="https://user-images.githubusercontent.com/70295997/206888794-572b00fc-b429-481c-bc7f-e0c90a8f65ab.png">
 
 
 
