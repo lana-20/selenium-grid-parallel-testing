@@ -72,6 +72,9 @@ For Safari there's no container, only for Chrome and Firefox. Apple does not pro
 
 Can host the Grid on Local, any other server, AWS cloud, or remote test labs. Just need the Hub Server IP address to set up on any machine. Configure it (the IP) in my Local (DesiredCapabilities), push the code to _master_ and trigger it.
 
+![image](https://user-images.githubusercontent.com/70295997/206893820-fe6d3ba8-6646-497d-b6e8-946755ecf139.png)
+
+
 Do not maintain the Master Branch inside the Hub. But how to generate reports? Reports are generated in my Local, because of the build path (project folder path).
 
 If running in Jenkins, Reports are generated in Jenkins:
