@@ -87,4 +87,5 @@ Eg, in Jenkins go to Build # 101, report it, and locate the Allure report in tha
 
 
 
+![image](https://user-images.githubusercontent.com/70295997/206930289-25c69099-54cc-4227-a49d-22879f3aac59.png)
 
