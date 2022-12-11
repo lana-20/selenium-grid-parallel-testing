@@ -49,13 +49,35 @@ This particular Hub has its own IP Address and Port Number. I have to configure 
 All these Nodes can also be moved to a different machine. From my management I request 5 machines for my 4 Nodes and 1 Hub. Machine M1 is the Hub. I run it on 192.168.1.1:4444. As soon as I run the Hub Server, I can see the Grid Console/Dashboard. The Node Console is black, when no nodes are working. Register Nodes with the Hub to establish connection.
 
 <img src="https://user-images.githubusercontent.com/70295997/206889723-607550f1-c4b8-41d1-bc79-e075877749f8.png" width=600>
-<img src="https://user-images.githubusercontent.com/70295997/206889046-96abbadb-e6d6-46ef-850d-301f25e8e5de.png" width=400>
+<img src="https://user-images.githubusercontent.com/70295997/206889952-a30f30bd-caab-42e8-8d44-15f7ef591a87.png" width=400>
 
 I can move this entire configuration to a different machine that is also a Local Machine. On the Local Host, my code contains Desired Capabilities, Host IP address, browsers and platforms I want to run. Based on that script, I send a request to the Hub to get executed on the Nodes.
 
 The entire infrastructure must be on the same Network. On my Local Host, the Hub IP must be white-listed, which is attainable when on the same network. Test case scripts run on respective node machines.
 
 <img src="https://user-images.githubusercontent.com/70295997/206888794-572b00fc-b429-481c-bc7f-e0c90a8f65ab.png">
+
+### Setup Selenium Grid
+
+1. Local
+2. Different machines/servers (Local)
+3. Set in the form of Docker
+4. Cloud (AWS, Azure, GCP, etc.) - install Docker container. Example: Set up Selenium Grid on AWS Docker container.
+5. Remote Labs (Saucelabs, Browserstack, Lambdatest)
+
+For Safari there's no container, only for Chrome and Firefox. Apple does not provide any container for Safari Driver.
+
+Can host the Grid on Local, any other server, AWS cloud, or remote test labs. Just need the Hub Server IP address to set up on any machine. Configure it (the IP) in my Local (DesiredCapabilities), push the code to _master_ and trigger it.
+
+Do not maintain the Master Branch inside the Hub. But how to generate reports? Reports are generated in my Local, because of the build path (project folder path).
+
+If running in Jenkins, Reports are generated in Jenkins:
+- Allure
+- Html Reports
+- Extent
+
+Eg, in Jenkins go to Build # 101, report it, and locate the Allure report in that particular Build.
+
 
 
 
