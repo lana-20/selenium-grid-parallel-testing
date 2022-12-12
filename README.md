@@ -88,7 +88,7 @@ Eg, in Jenkins go to Build # 101, report it, and locate the Allure report in tha
 Use Remote WebDriver (RWD) with Desired Capabilities (DC).
 Set up an EC2 machine on AWS.
 
-![image](https://user-images.githubusercontent.com/70295997/206936894-72026dc4-b51e-4124-b9c2-d729bc4b600f.png)
+![image](https://user-images.githubusercontent.com/70295997/206938058-d2ab36a3-1ce2-4ebd-a2c8-212428f5201e.png)
 
 Through my Docker Container, I create a Hub (C1) and its own IP address, on an AWS EC2 instance. On the same machine, I can create multiple Nodes, in the form of Containers:
 
@@ -101,4 +101,4 @@ On a node container, with the help of Selenium, I have Chrome of Firefox install
 
 When I install this infrastructure through Docker [container], the Hub is connected to all the Node containers. I can maintain all 7 containers (1 Hub + 6 Nodes) on the same EC2 machine. Or, I can take a cluster of 6 EC2 instances and connect the Hub to it. However, this may incur unnecessary costs for EC2 instances. It's better to create 1 EC2 on AWS and configure all the Grid setup there.
 
-The whole concept remains the same. On the same machine, I have the Hub set up on IP Address 201.9.10.11 : Port Number 4444. All the Nodes have their own IP Address and Port Number. All these are Linux Machines. 95% of the containers available on the market are Linux containers.
+The whole concept remains the same. On the same machine, I have the Hub set up on IP Address 201.9.10.11 : Port Number 4444. All the Nodes have their own IP Address and Port Number. All these are Linux Machines. 95% of the containers available on the market are Linux containers. I'm uncertain if Windows containers are availalble for Selenium Chrome, Firefox or other browsers. Most of the containers I work with are Linux machines. Each Linux machine has its own IP and Port, the same IP:Port as in the Hub Server. All the Nodes and the Hub are connected through Docker Containers and are available on my AWS machine.
