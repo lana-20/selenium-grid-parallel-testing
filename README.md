@@ -103,7 +103,12 @@ When I install this infrastructure through Docker [container], the Hub is connec
 
 The whole concept remains the same. On the same machine, I have the Hub set up on IP Address 201.9.10.11 : Port Number 4444. All the Nodes have their own IP Address and Port Number. All these are Linux Machines. 95% of the containers available on the market are Linux containers. I'm uncertain if Windows containers are availalble for Selenium Chrome, Firefox or other browsers. Most of the containers I work with are Linux machines. Each Linux machine has its own IP and Port, the same IP:Port as in the Hub Server. All the Nodes and the Hub are connected through Docker Containers and are available on my AWS machine.
 
-I have my code with Desired Capabilities, which contain the IP address and Port number matching those of the Hub IP:Port.
+I have my code with Desired Capabilities, which contains the IP address and Port number matching those of the Hub IP:Port.
 <img src="https://user-images.githubusercontent.com/70295997/206939796-5b520641-5289-490f-a5ab-e50cc2bc3435.png" width=600>
 
+And I push this code to the Master Branch. Same way, I can pull the Master's latest code to my Local, if I want to run the code on a particular cloud.
+
+I create a Jenkins Server, configure a Job or a Pipeline in it. Inside the Job, I provide the path to my particular Git repo. From it, I trigger a Job. Then my code gets compiled and executed. My test gets executed from there. In this part, the test checks if this particular Master Repo has these particular Desired Capabilities, when I launch my WebDriver.
+
+<img src="https://user-images.githubusercontent.com/70295997/206964372-c5392bea-2e23-4c15-b146-8bd74ce9501a.png" width=800>
 
