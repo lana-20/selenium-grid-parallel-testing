@@ -75,9 +75,9 @@ Can host the Grid on Local, any other server, AWS cloud, or remote test labs. Ju
 ![image](https://user-images.githubusercontent.com/70295997/206893820-fe6d3ba8-6646-497d-b6e8-946755ecf139.png)
 
 
-Do not maintain the Master Branch inside the Hub. But how to generate reports? Reports are generated in my Local, because of the build path (project folder path).
+Do not maintain the Master Branch inside the Hub. But how to generate reports? Reports always generate in my Local, because of the build path (project folder path).
 
-If running in Jenkins, Reports are generated in Jenkins:
+If running in Jenkins, Reports are generated in Jenkins under the Build Number:
 - Allure
 - Html Reports
 - Extent
@@ -136,9 +136,12 @@ What if I want to execute on my Local? I don't want a bunch of web browsers on A
 If RemoteFlag is False, it executes on Local machine.
 If RemoteFlag is True, it means I'm trying to run on remote driver. It should execute on the container, i.e. Selenium Grid side on the particular container or AWS machine.
 
+<img src="https://user-images.githubusercontent.com/70295997/206972260-abd47dc8-8794-44f0-bec4-802ef40c36d9.png" width=600>
 
+Do not store the Master Branch on the Hub. It means I'd have to store/maintain a Jenkins machine inside the Hub -> Bad practice!
 
-
+Instead store the Hub and Nodes on their own separate (virtual) machines with their own respective IP addresses. Retrieve the Reports from either Local or Jenkins job build number.
+![image](https://user-images.githubusercontent.com/70295997/206974807-0e0c1b7d-1b93-4f96-937f-0da3d1b98bfe.png)
 
 
 
