@@ -85,8 +85,20 @@ If running in Jenkins, Reports are generated in Jenkins:
 Eg, in Jenkins go to Build # 101, report it, and locate the Allure report in that particular Build.
 <img src="https://user-images.githubusercontent.com/70295997/206930532-93831b7e-66e9-4a4e-968d-fc2cfb61981d.png" width=800>
 
+Use Remote WebDriver (RWD) with Desired Capabilities (DC).
+Set up an EC2 machine on AWS.
 
+![image](https://user-images.githubusercontent.com/70295997/206936894-72026dc4-b51e-4124-b9c2-d729bc4b600f.png)
 
+Through my Docker Container, I create a Hub (C1) and its own IP address, on an AWS EC2 instance. On the same machine, I can create multiple Nodes, in the form of Containers:
 
-![image](https://user-images.githubusercontent.com/70295997/206930289-25c69099-54cc-4227-a49d-22879f3aac59.png)
+- Node 1 - Container 2 - C2
+- Node 2 - Container 3 - C3
+- Node 3 - Container 4 - C4
+- ...
 
+On a node container, with the help of Selenium, I have Chrome of Firefox installed. No Safari containers. 
+
+When I install this infrastructure through Docker [container], the Hub is connected to all the Node containers. I can maintain all 7 containers (1 Hub + 6 Nodes) on the same EC2 machine. Or, I can take a cluster of 6 EC2 instances and connect the Hub to it. However, this may incur unnecessary costs for EC2 instances. It's better to create 1 EC2 on AWS and configure all the Grid setup there.
+
+The whole concept remains the same. On the same machine, I have the Hub set up on IP Address 201.9.10.11 : Port Number 4444. All the Nodes have their own IP Address and Port Number. All these are Linux Machines. 95% of the containers available on the market are Linux containers.
