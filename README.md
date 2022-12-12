@@ -102,3 +102,8 @@ On a node container, with the help of Selenium, I have Chrome of Firefox install
 When I install this infrastructure through Docker [container], the Hub is connected to all the Node containers. I can maintain all 7 containers (1 Hub + 6 Nodes) on the same EC2 machine. Or, I can take a cluster of 6 EC2 instances and connect the Hub to it. However, this may incur unnecessary costs for EC2 instances. It's better to create 1 EC2 on AWS and configure all the Grid setup there.
 
 The whole concept remains the same. On the same machine, I have the Hub set up on IP Address 201.9.10.11 : Port Number 4444. All the Nodes have their own IP Address and Port Number. All these are Linux Machines. 95% of the containers available on the market are Linux containers. I'm uncertain if Windows containers are availalble for Selenium Chrome, Firefox or other browsers. Most of the containers I work with are Linux machines. Each Linux machine has its own IP and Port, the same IP:Port as in the Hub Server. All the Nodes and the Hub are connected through Docker Containers and are available on my AWS machine.
+
+I have my code with Desired Capabilities, which contain the IP address and Port number matching those of the Hub IP:Port.
+<img src="https://user-images.githubusercontent.com/70295997/206939796-5b520641-5289-490f-a5ab-e50cc2bc3435.png" width=600>
+
+
