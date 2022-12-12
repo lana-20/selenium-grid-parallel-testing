@@ -141,8 +141,4 @@ If RemoteFlag is True, it means I'm trying to run on remote driver. It should ex
 Do not store the Master Branch on the Hub. It means I'd have to store/maintain a Jenkins machine inside the Hub -> Bad practice!
 
 Instead store the Hub and Nodes on their own separate (virtual) machines with their own respective IP addresses. Retrieve the Reports from either Local or Jenkins job build number.
-![image](https://user-images.githubusercontent.com/70295997/206974807-0e0c1b7d-1b93-4f96-937f-0da3d1b98bfe.png)
-
-
-
-
+![image](https://user-images.githubusercontent.com/70295997/206976013-2a2f1dae-30ed-4ec4-afd4-8d0a2ad75e2c.png)
