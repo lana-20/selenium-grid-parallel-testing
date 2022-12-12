@@ -112,3 +112,34 @@ I create a Jenkins Server, configure a Job or a Pipeline in it. Inside the Job, 
 
 <img src="https://user-images.githubusercontent.com/70295997/206964372-c5392bea-2e23-4c15-b146-8bd74ce9501a.png" width=800>
 
+I launch my WebDriver with Remote WebDriver (RWD) from my Local. On my Local, I've already configured that I have to use RWD to run tests on the Hub machine (WebDriver driver = RWD).
+
+RWD is responsible for executing tests on a remote machine. A remote machine can be anyrhing - on AWS EC2 instance, on my Docker, on Saucelabs, etc. In my case, it's an AWS EC2 instance.
+
+I pass the Hub IP:Port configuration to RWD. In the same code that I have on my Local. I push that code to the Master Repo and trigger the Jenkins Job. Through Jenkins I trigger my test cases on the AWS EC2 instance. IP address white-listing is configured there - on AWS I have to provide the IP address for inbound loads. It means that any Requests coming from this specific Jenkins server get accepted and not blocked.
+
+The Jenkins Request is sent to the Hub Server. The Hub recognizes a Chrome machine and executes on Container 1 (C1). It means that if I pass 10 test cases and give a thread count of 5 (through my TestNG, or xml, etc.) it executes in Parallel mode. First, it passes through the 4 availalble Chrome containers, then make another pass through 1 Chrome container. Same with Firefox.
+
+In Parallel mode I can execute Cross-Browser and Cross-Platform testing. In this case, Cross-Platform testing is not feasible, because I have no Windows available. An instance is available, but the container is not. If I really have to, I can create a Windows node with Firefox and Chrome.
+
+If I don't want to maintain Jenkins, then my Local runs on TestNG. TestNG executes my code on the specific Hub Server machine (on AWS cloud) from Local. Because I've configured the same Hub IP:Port in my Local script.
+
+What if I want to execute on my Local? I don't want a bunch of web browsers on AWS. I just have to put a condition/flag in the script.
+
+    # Local
+
+    if RemoteFlag = True:
+     RWD(IP:Port)
+    else:
+     Local -> WD driver = new ChromeDriver()
+
+If RemoteFlag is False, it executes on Local machine.
+If RemoteFlag is True, it means I'm trying to run on remote driver. It should execute on the container, i.e. Selenium Grid side on the particular container or AWS machine.
+
+
+
+
+
+
+
+
