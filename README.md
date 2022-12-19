@@ -142,3 +142,11 @@ Do not store the Master Branch on the Hub. It means I'd have to store/maintain a
 
 Instead store the Hub and Nodes on their own separate (virtual) machines with their own respective IP addresses. Retrieve the Reports from either Local or Jenkins job build number.
 ![image](https://user-images.githubusercontent.com/70295997/206976013-2a2f1dae-30ed-4ec4-afd4-8d0a2ad75e2c.png)
+
+____
+
+[Parallel Testing: The Essential Guide](https://www.browserstack.com/guide/what-is-parallel-testing)
+
+[Parallel Tests Calculator](https://www.browserstack.com/automate/parallel-calculator)
+
+[Docker](https://github.com/lana-20/docker/blob/main/README.md)
