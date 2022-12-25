@@ -150,3 +150,5 @@ ____
 [Parallel Tests Calculator](https://www.browserstack.com/automate/parallel-calculator)
 
 [Docker](https://github.com/lana-20/docker/blob/main/README.md)
+
+[Selenium Grid Tutorial : How to Set It Up](https://www.browserstack.com/guide/selenium-grid-tutorial)
