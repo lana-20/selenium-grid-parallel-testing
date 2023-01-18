@@ -3,7 +3,7 @@
 
 # ⦷ Parallel Testing
 
-_Parallel Testing_ is essential in web UI test automation. It decreases the execution time and costs dramatically. From the Agile testing perspective, it allows for fast deploy-and-ship plus frugality with the budget and human capital.
+_Parallel Testing_ is essential in web UI test automation. It decreases the execution time and costs dramatically. From the Agile testing perspective, it allows for fast build-and-ship plus frugality with the budget and human capital. Faster build times mean faster releases/deployments and less time spent waiting for builds to complete, as is happens in a [more tradional release process](https://github.com/lana-20/traditional-web-release-process).
 
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/70295997/213115529-5029e2f1-0286-4afd-8f04-7dbad2bdc365.png">
 
