@@ -1,10 +1,27 @@
-# Selenium Grid
+# Parallel Testing
 
-__Parallel Execution__ is essential in web UI test automation. It decreases the execution time dramatically.
+_Parallel Testing_ is essential in web UI test automation. It decreases the execution time and costs dramatically. From the Agile testing perspective, it allows for fast deploy-and-ship plus frugality with the budget and human capital.
 
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/70295997/213115529-5029e2f1-0286-4afd-8f04-7dbad2bdc365.png">
 
-_Parallel Execution_ can be achieved by using Selenium Grid, CI/CD tools like Jenkins, remote driver connection (set up via the DesiredCapabilities JSON object in the test script) to a cloud service like AWS or cloud-based test lab like BlazeMeter, LambdaTest, or SauceLabs, and container orchestration service like Docker.
+To see how parallel testing can enhance regular automation testing, consider a basic example of an automated functional test for a sign-up form. If we were to run this test on 45 different browser and operating system configurations, with each test taking an average of 2 minutes, then the total test time would be 90 minutes or 1.5 hours if run in sequence.
+
+If I were to run 3 parallel tests simultaneously, the total execution time would be reduced to 30 minutes. And if we were to run 6 parallel tests, the total execution time would be further reduced to 15 minutes, which is a significant decrease compared to running them in sequence.
+
+![image](https://user-images.githubusercontent.com/70295997/213121653-d8164365-80eb-419f-b41b-c20ddc09745f.png)![image](https://user-images.githubusercontent.com/70295997/213121718-03532f7f-f3a2-414a-9be2-33ee7ffd7916.png)
+
+
+As more software engineering teams adopt the CI/CD model, the pressure to quickly release high-quality products is growing. In quality assurance (QA), one way to minimize the impact of bugs is to test code early and fail quickly. To achieve this, QA teams need to increase [test coverage](https://github.com/lana-20/test-coverage) through automation. However, the large number of tests that need to be performed and the limited time available for testing can make it difficult to rely solely on sequential automated tests. Parallel testing enables teams to simultaneously run automated tests across multiple configurations, which helps to address constraints related to time and budget while also increasing test coverage and improving quality.
+
+Parallel Testing is a technique that utilizes automation testing by allowing the same tests to be run at the same time in different environments, on various device and browser configurations. The primary aim of parallel testing is to minimize time and resource limitations. Unlike distributed testing, where different testing components interact with each other, parallel testing does not involve any interactions between test components.
+
+_Parallel Execution_ can be achieved by using Selenium Grid, CI/CD tools like Jenkins, remote driver connection (set up via the DesiredCapabilities JSON object in the test script) to a cloud service like AWS or cloud-based test lab like BlazeMeter, LambdaTest, or SauceLabs, and container orchestration service like Docker. Running tests in parallel can significantly reduce the time needed to complete even the most tedious test suites.
+
+![image](https://user-images.githubusercontent.com/70295997/213120888-91ab5c62-40ab-4286-abe3-d38513b2b5e7.png)
+
+_Parallel Execution_ can be achieved by using Selenium Grid, CI/CD tools like Jenkins, remote driver connection (set up via the DesiredCapabilities JSON object in the test script) to a cloud service like AWS or cloud-based test lab like BlazeMeter, LambdaTest, or SauceLabs, and container orchestration service like Docker. Running tests in parallel can significantly reduce the time needed to complete even the most tedious test suites.
+
+# Selenium Grid
 
 There are 4 components in the Selenium suite:
 1) RC - Remote Control (a.k.a. Selenium 1) -> deprecated
