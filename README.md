@@ -4,7 +4,7 @@ _Parallel Testing_ is essential in web UI test automation. It decreases the exec
 
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/70295997/213115529-5029e2f1-0286-4afd-8f04-7dbad2bdc365.png">
 
-To see how parallel testing can enhance regular automation testing, consider a basic example of an automated functional test for a sign-up form. If we were to run this test on 45 different browser and operating system configurations, with each test taking an average of 2 minutes, then the total test time would be 90 minutes or 1.5 hours if run in sequence.
+To see how parallel testing can enhance regular automation testing, consider a basic example of an automated functional test for a sign-up form. If we were to run this test on 45 different browser and operating system configurations, with each test taking an average of 2 minutes, then the total test time would be 90 minutes or 1.5 hours if run in sequence. I once worked on a FinTech automation suite, which contained over 100K test cases, which when run sequentially took 9.5 days.
 
 If I were to run 3 parallel tests simultaneously, the total execution time would be reduced to 30 minutes. And if we were to run 6 parallel tests, the total execution time would be further reduced to 15 minutes, which is a significant decrease compared to running them in sequence.
 
