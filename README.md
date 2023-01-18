@@ -1,5 +1,11 @@
 # Selenium Grid
 
+__Parallel Execution__ is essential in web UI test automation. It decreases the execution time dramatically.
+
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/70295997/213115529-5029e2f1-0286-4afd-8f04-7dbad2bdc365.png">
+
+_Parallel Execution_ can be achieved by using Selenium Grid, CI/CD tools like Jenkins, remote driver connection (set up via the DesiredCapabilities JSON object in the test script) to a cloud service like AWS or cloud-based test lab like BlazeMeter, LambdaTest, or SauceLabs, and container orchestration service like Docker.
+
 There are 4 components in the Selenium suite:
 1) RC - Remote Control (a.k.a. Selenium 1) -> deprecated
 2) IDE - record and playback
@@ -152,3 +158,5 @@ ____
 [Docker](https://github.com/lana-20/docker/blob/main/README.md)
 
 [Selenium Grid Tutorial : How to Set It Up](https://www.browserstack.com/guide/selenium-grid-tutorial)
+
+[🖥 💻 Desktop OSs & Browsers - 📊 Market Share & 🎉 Popularity](https://github.com/lana-20/desktop-os-browser-market_share)
