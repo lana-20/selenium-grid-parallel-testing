@@ -52,7 +52,7 @@ Download standalone Selenium and start the server. This Selenium server needs a 
 There is no external server, no Docker, no AWS - everything runs on the Local Machine. The Hub is connected to Multiple Nodes which run on the same machine.
 The Test Script sends a Request to the Hub machine at the Local Host server.
 
-The Grid is used for (1) Cross-Browser and (2) Cross-Platform testing.
+The Grid is used for [(1) Cross-Browser and (2) Cross-Platform](https://github.com/lana-20/desktop-os-browser-market_share) testing.
 
 Eg, in the script I pass the Desired Capabilities combination with the Chrome (browser) on a Windows machine (platform) to the server (hub). 
 The Server checks for and boots an available node with Chrome on Windows. Test case TC1 gets executed on this particular (Node 1) machine.
@@ -101,7 +101,7 @@ Can host the Grid on Local, any other server, AWS cloud, or remote test labs. Ju
 Do not maintain the Master Branch inside the Hub. But how to generate reports? Reports always generate in my Local, because of the build path (project folder path).
 
 If running in Jenkins, Reports are generated in Jenkins under the Build Number:
-- Allure
+- [Allure](https://github.com/lana-20/Allure_Report_Selenium_Python)
 - Html Reports
 - Extent
 
@@ -119,6 +119,7 @@ Through my Docker Container, I create a Hub (C1) and its own IP address, on an A
 - Node 2 - Container 3 - C3
 - Node 3 - Container 4 - C4
 - ...
+- Node n - Container n - Cn
 
 On a node container, with the help of Selenium, I have Chrome of Firefox installed. No Safari containers. 
 
