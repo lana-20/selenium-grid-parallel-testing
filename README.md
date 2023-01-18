@@ -1,4 +1,4 @@
-# Parallel Testing
+# ⦷ Parallel Testing
 
 _Parallel Testing_ is essential in web UI test automation. It decreases the execution time and costs dramatically. From the Agile testing perspective, it allows for fast deploy-and-ship plus frugality with the budget and human capital.
 
@@ -23,7 +23,7 @@ _Parallel Execution_ can be achieved by using Selenium Grid, CI/CD tools like Je
 
 _Parallel Execution_ can be achieved by using Selenium Grid, CI/CD tools like Jenkins, remote driver connection (set up via the DesiredCapabilities JSON object in the test script) to a cloud service like AWS or cloud-based test lab like BlazeMeter, LambdaTest, or SauceLabs, and container orchestration service like Docker. Running tests in parallel can significantly reduce the time needed to complete even the most tedious test suites.
 
-# Selenium Grid
+# ⩨ Selenium Grid
 
 There are 4 components in the Selenium suite:
 1) RC - Remote Control (a.k.a. Selenium 1) -> deprecated
