@@ -1,3 +1,6 @@
+
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/70295997/213134778-e42d8b19-4889-4406-88bd-b1afe2848e2a.png">
+
 # ⦷ Parallel Testing
 
 _Parallel Testing_ is essential in web UI test automation. It decreases the execution time and costs dramatically. From the Agile testing perspective, it allows for fast deploy-and-ship plus frugality with the budget and human capital.
