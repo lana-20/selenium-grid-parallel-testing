@@ -28,6 +28,22 @@ The below real-time results illustrate the significant time savings achieved thr
 
 _Parallel Execution_ can be achieved by using Selenium Grid, CI/CD tools like Jenkins, remote driver connection (set up via the DesiredCapabilities JSON object in the test script) to a cloud service like AWS or cloud-based test lab like BlazeMeter, LambdaTest, or SauceLabs, and container orchestration service like Docker. Running tests in parallel can significantly reduce the time needed to complete even the most tedious test suites.
 
+__When should parallel testing be used?__ 👉 Optimize test execution time frames in scenarios where parallel test execution is ideal:
+- Software engineering team needs to test the functionality of an application across multiple devices and configurations, particularly in regression scenarios with updated versions of an app. 
+- Useful for testing the seamless transfer of legacy data from an older system to a newer one using an automated regression test suite. 
+- Beneficial for automated browser testing when an app needs to be tested on various combinations of browsers, operating systems, and devices.
+
+A common way to approach parallel testing is to create a suite of projects to test browser compatibility and then a master project to test the aforementioned set of projects. Upon setup completion, create a set of Entry and Exit Criteria.
+
+For _Entry Criteria_, define those checkboxes that must be ticked off before test execution starts, for example:
+- Set up a suitable test environment, eg, Selenium with TestNG/PyUnit.
+- Define preconditions and test scenarios for the automated browser test procedure.
+- Migrate any new and/or legacy data required.
+
+The _Exit Criteria_ focus more on:
+- Understanding the difference in terms of test suite execution impact.
+- Measuring the output of a new system as compared to a legacy system (if applicable).
+
 # ⩨ Selenium Grid
 
 There are 4 components in the Selenium suite:
