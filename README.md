@@ -19,9 +19,8 @@ Parallel Testing is a technique that utilizes automation testing by allowing the
 
 The below real-time results illustrate the significant time savings achieved through parallelization, as the parallel test execution is approximately 1.5 times faster than the serialized version.
 
-<img width="1000" alt="image" src="https://user-images.githubusercontent.com/70295997/213132936-040871c3-be93-4f19-895c-a4593035548e.png">
+<img width="1460" src="https://user-images.githubusercontent.com/70295997/230106084-caa212cf-edb1-414b-894c-d7ce785c13a2.png">
 
-![image](https://user-images.githubusercontent.com/70295997/213120888-91ab5c62-40ab-4286-abe3-d38513b2b5e7.png)
 
 _Parallel Execution_ can be achieved by using Selenium Grid, CI/CD tools like Jenkins, remote driver connection (set up via the DesiredCapabilities JSON object in the test script) to a cloud service like AWS or cloud-based test lab like BlazeMeter, LambdaTest, or SauceLabs, and container orchestration service like Docker. Running tests in parallel can significantly reduce the time needed to complete even the most tedious test suites.
 
