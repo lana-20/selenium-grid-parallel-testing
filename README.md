@@ -194,6 +194,9 @@ ____
 
 [Docker](https://github.com/lana-20/docker/blob/main/README.md)
 
+[The Architecture of Selenium Grid - 2023 SOSC Unconference - Simon Stewart](https://drive.google.com/file/d/1rE4Qk8qANA2xAeD3SMvRW2HWpFdzPUr6/view?usp=sharing)
+
 [Selenium Grid Tutorial : How to Set It Up](https://www.browserstack.com/guide/selenium-grid-tutorial)
+
 
 [🖥 💻 Desktop OSs & Browsers - 📊 Market Share & 🎉 Popularity](https://github.com/lana-20/desktop-os-browser-market_share)
